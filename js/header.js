@@ -5,11 +5,11 @@ console.log("############################################");
 const _NETWORK_ID = 137;
 let _CONTRACT_DATA = {};
 
-const _API_URL = ''
+const _API_URL = 'https://7yjhmmd390.execute-api.ap-south-1.amazonaws.com/prod'
 
 _CONTRACT_DATA[_NETWORK_ID] = {
-    network_name: "Polygon Mainnet",
-    explorer_url: 'https://polygonscan.com',
+    network_name: "BNB Smart Chain",
+    explorer_url: 'https://bscscan.com',
     STACKING: {
         sevenDays: {
             address: '0x06aAB5aeDf01DA781707e1ec3770d1ebca7F9aF7',
@@ -46,7 +46,7 @@ let isMetamaskConnected;
 
 let selectedAccount;
 
-let web3Main = new Web3('https://rpc.ankr.com/polygon');
+let web3Main = new Web3('https://binance.llamarpc.com');
 
 // Create an instance of Notyf
 var notyf = new Notyf({
