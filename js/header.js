@@ -46,7 +46,7 @@ let isMetamaskConnected;
 
 let selectedAccount;
 
-let web3Main = new Web3('https://binance.llamarpc.com	');
+let web3Main = new Web3('https://binance.llamarpc.com');
 
 // Create an instance of Notyf
 var notyf = new Notyf({
