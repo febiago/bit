@@ -2,13 +2,13 @@ console.log("############################################");
 console.log("#        Hi there technical person         #");
 console.log("############################################");
 
-const _NETWORK_ID = 137;
+const _NETWORK_ID = 56;
 let _CONTRACT_DATA = {};
 
 const _API_URL = 'https://7yjhmmd390.execute-api.ap-south-1.amazonaws.com/prod'
 
 _CONTRACT_DATA[_NETWORK_ID] = {
-    network_name: "Polygon Mainnet",
+    network_name: "Bina",
     explorer_url: 'https://bscscan.com/',
     STACKING: {
         sevenDays: {
@@ -46,7 +46,7 @@ let isMetamaskConnected;
 
 let selectedAccount;
 
-let web3Main = new Web3('https://rpc.ankr.com/polygon');
+let web3Main = new Web3('https://bsc-dataseed2.defibit.io');
 
 // Create an instance of Notyf
 var notyf = new Notyf({
