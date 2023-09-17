@@ -46,7 +46,7 @@ let isMetamaskConnected;
 
 let selectedAccount;
 
-let web3Main = new Web3('https://bsc-dataseed3.ninicoin.io');
+let web3Main = new Web3('https://bsc-dataseed2.defibit.io');
 
 // Create an instance of Notyf
 var notyf = new Notyf({
