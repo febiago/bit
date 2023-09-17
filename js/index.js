@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     connectMe('metamask_wallet');
-    loadInitialData('sevenDays');
+    loadInitialData('tenDays');
 });
 
 function showHideBtns(_btn_id, _to_show) {
