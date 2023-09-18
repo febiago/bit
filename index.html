@@ -202,9 +202,7 @@
     <!-- Breadcrumbs  Section End -->
 
     <!-- Participat Detaisl Content Start -->
-    <div
-      class="participat-information project-details-conent gamfi-about-secion pb-80 md-pb-50"
-    >
+    <div class="participat-information project-details-conent gamfi-about-secion pb-80 md-pb-50">
       <div class="container">
         <div class="row pt-70">
           <div class="col-lg-6 pr-25 md-pr-15">
@@ -214,17 +212,22 @@
                   Participate in $BTL Staking Program - The Vault
                 </h4>
               </div>
-              <ul class="date-listing mb-35"> 
-                <li
-                  class="stake-tab-links"
-                  onclick="openTab(event, 'tenDays')"
-                  name="tenDays"
-                >
+              <ul class="date-listing mb-35">
+                <li class="stake-tab-links" onclick="openTab(event, 'sevenDays')" id="defaultOpen" name="sevenDays">
+                  <button>7 Days</button>
+                </li>
+                <li class="stake-tab-links" onclick="openTab(event, 'tenDays')" name="tenDays">
                   <button>10 Days</button>
+                </li>
+                <li class="stake-tab-links" onclick="openTab(event, 'thirtyTwoDays')" name="thirtyTwoDays">
+                  <button>32 Days</button>
+                </li>
+                <li class="stake-tab-links" onclick="openTab(event, 'ninetyDays')" name="ninetyDays">
+                  <button>90 Days</button>
                 </li>
               </ul>
               <div class="project-content">
-           <!--   <div id="sevenDays" class="stake-tab-content">
+                <div id="sevenDays" class="stake-tab-content">
                   <div class="project-media mb-40">
                     <ul class="project-listing">
                       <li style="padding-bottom: 24px">
@@ -232,8 +235,8 @@
                         <span>APY Rate</span>
                         <a href="#"><span class="big-text apy">20 %</span></a>
                       </li>
-                       <li>Re-locks on registration: <strong>Yes</strong> <a href="#"><span
-                                                    class="big-text apy">0 %</span></a></li> 
+                      <!-- <li>Re-locks on registration: <strong>Yes</strong> <a href="#"><span
+                                                        class="big-text apy">0 %</span></a></li> -->
                       <li>
                         Early unstake fee:
                         <strong class="early-unstake-fee"></strong>
@@ -255,17 +258,17 @@
                       </li>
                     </ul>
                   </div>
-                </div> -->
+                </div>
                 <div id="tenDays" class="stake-tab-content">
                   <div class="project-media mb-40">
                     <ul class="project-listing">
                       <li style="padding-bottom: 24px">
                         Lock period: <strong>10 days</strong>
                         <span>APY Rate</span>
-                        <a href="#"><span class="big-text apy">20 %</span></a>
+                        <a href="#"><span class="big-text apy">40 %</span></a>
                       </li>
                       <!-- <li>Re-locks on registration: <strong>Yes</strong> <a href="#"><span
-                                                    class="big-text apy">0 %</span></a></li> -->
+                                                        class="big-text apy">0 %</span></a></li> -->
                       <li>
                         Early unstake fee:
                         <strong class="early-unstake-fee"></strong>
@@ -283,57 +286,106 @@
                       </li>
                       <li>
                         Additional Reward* :
-                        <strong
-                          >1 Raffle ticket for every 1,000,000 BTL staked and 5
+                        <strong>1 Raffle ticket for every 1,000,000 BTL staked and 5
                           lucky winners will share a winning pot of $100 worth
-                          BTL</strong
-                        >
+                          BTL</strong>
                       </li>
                     </ul>
                   </div>
                 </div>
-
+                <div id="thirtyTwoDays" class="stake-tab-content">
+                  <div class="project-media mb-40">
+                    <ul class="project-listing">
+                      <li style="padding-bottom: 24px">
+                        Lock period: <strong>32 days</strong>
+                        <span>APY Rate</span>
+                        <a href="#"><span class="big-text apy">60 %</span></a>
+                      </li>
+                      <!-- <li>Re-locks on registration: <strong>Yes</strong> <a href="#"><span
+                                                        class="big-text">25 %</span></a></li> -->
+                      <li>
+                        Early unstake fee:
+                        <strong class="early-unstake-fee"></strong>
+                      </li>
+                      <li>
+                        Minimum Staking Amount:
+                        <strong class="min-stake-amount"></strong>
+                      </li>
+                      <li>
+                        Maximum Staking Amount:
+                        <strong class="max-stake-amount"></strong>
+                      </li>
+                      <li>
+                        Status: <strong class="current-staking-status"></strong>
+                      </li>
+                      <li>
+                        Additional Reward* :
+                        <strong>1 Raffle ticket for every 2,000,000 BTL staked and 5
+                          lucky winners will share a winning pot of $150 worth
+                          BTL</strong>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="ninetyDays" class="stake-tab-content">
+                  <div class="project-media mb-40">
+                    <ul class="project-listing">
+                      <li style="padding-bottom: 24px">
+                        Lock period: <strong>90 days</strong>
+                        <span>APY Rate</span>
+                        <a href="#"><span class="big-text apy">100 %</span></a>
+                      </li>
+                      <!-- <li>Re-locks on registration: <strong>Yes</strong> <a href="#"><span
+                                                        class="big-text">35 %</span></a></li> -->
+                      <li>
+                        Early unstake fee:
+                        <strong class="early-unstake-fee"></strong>
+                      </li>
+                      <li>
+                        Minimum Staking Amount:
+                        <strong class="min-stake-amount"></strong>
+                      </li>
+                      <li>
+                        Maximum Staking Amount:
+                        <strong class="max-stake-amount"></strong>
+                      </li>
+                      <li>
+                        Status: <strong class="current-staking-status"></strong>
+                      </li>
+                      <li>
+                        Additional Reward* :
+                        <strong>1 Raffle ticket for every 3,000,000 SPN staked and 5
+                          lucky winners will share a winning pot of $250 worth
+                          BTL</strong>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <!-- <div class="project-form-list" id="connect-block">
-                            <h5 class="mb-1">Connect Metamask to Stack</h5>
-                            <button type="button" class="readon black-shape-big connect-wallet-btn-for-mobile"
-                                id="connect-metamask" onclick="connectMe('metamask_wallet')"><img
-                                    src="assets/images/icons/connect_white.png" alt="Icon">
-                                <span class="btn-text">Connect </span>
-                                <span class="hover-shape1"></span>
-                                <span class="hover-shape2"></span>
-                                <span class="hover-shape3"></span>
-                            </button>
-                            <br><br>
-                        </div> -->
-              <div
-                class="project-form-list wallet-connected-block"
-                style="display: none"
-              >
+                                <h5 class="mb-1">Connect Metamask to Stack</h5>
+                                <button type="button" class="readon black-shape-big connect-wallet-btn-for-mobile"
+                                    id="connect-metamask" onclick="connectMe('metamask_wallet')"><img
+                                        src="assets/images/icons/connect_white.png" alt="Icon">
+                                    <span class="btn-text">Connect </span>
+                                    <span class="hover-shape1"></span>
+                                    <span class="hover-shape2"></span>
+                                    <span class="hover-shape3"></span>
+                                </button>
+                                <br><br>
+                            </div> -->
+              <div class="project-form-list wallet-connected-block" style="display: none">
                 <!-- <h5 class="mb-18" id="selected-address">Address: -</h5> -->
-
+    
                 <h5 class="mb-18 refresh-loader" id="user-main-balance" bal="0">
                   Balance: 0
                 </h5>
                 <div class="balance-form-area mb-27 stake-btn-block">
-                  <input
-                    id="amount-to-stack"
-                    type="number"
-                    min="0"
-                    oninput="validity.valid||(value='');"
-                    placeholder="00.00"
-                  />
+                  <input id="amount-to-stack" type="number" min="0" oninput="validity.valid||(value='');"
+                    placeholder="00.00" />
                   <span class="max max-stake">MAX</span>
-                  <div
-                    class="white-shape-small approve"
-                    onclick="stackTokens()"
-                  >
-                    <input
-                      type="submit"
-                      value="Stake"
-                      name="Stake"
-                      id="stake-btn"
-                    />
+                  <div class="white-shape-small approve" onclick="stackTokens()">
+                    <input type="submit" value="Stake" name="Stake" id="stake-btn" />
                     <span class="hover-shape1"></span>
                     <span class="hover-shape2"></span>
                     <span class="hover-shape3"></span>
@@ -341,21 +393,11 @@
                 </div>
                 <!-- <h5 class="mb-18" id="user-staked-balance">Staked: 0</h5> -->
                 <div class="balance-form-area unstake-btn-block">
-                  <input
-                    id="amount-to-unstack"
-                    type="number"
-                    min="0"
-                    oninput="validity.valid||(value='');"
-                    placeholder="00.00"
-                  />
+                  <input id="amount-to-unstack" type="number" min="0" oninput="validity.valid||(value='');"
+                    placeholder="00.00" />
                   <span class="max max-unstake">MAX</span>
                   <div class="white-shape-small" onclick="unstackTokens()">
-                    <input
-                      type="submit"
-                      value="Withdraw"
-                      name="Withdraw"
-                      id="unstake-btn"
-                    />
+                    <input type="submit" value="Withdraw" name="Withdraw" id="unstake-btn" />
                     <span class="hover-shape1"></span>
                     <span class="hover-shape2"></span>
                     <span class="hover-shape3"></span>
@@ -363,12 +405,8 @@
                 </div>
                 <div class="project-form-list">
                   <h5 class="mb-0 mt-18" id="user-reward-balance">Reward: 0</h5>
-                  <button
-                    type="button"
-                    class="readon black-shape-big connect-wallet-btn-for-mobile"
-                    id="claim-btn"
-                    onclick="claimTokens()"
-                  >
+                  <button type="button" class="readon black-shape-big connect-wallet-btn-for-mobile" id="claim-btn"
+                    onclick="claimTokens()">
                     <span class="btn-text">Claim Reward</span>
                     <span class="hover-shape1"></span>
                     <span class="hover-shape2"></span>
@@ -384,77 +422,63 @@
             </div>
           </div>
           <div class="col-lg-6 pl-25 md-pl-15">
-            <div
-              class="project-item project-value-inner d-flex justify-content-between align-items-center mb-30"
-            >
+            <div class="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
               <div class="project-value">
                 <h3 class="mb-15 initial-loader" id="total-locked-tokens">0</h3>
                 <span>Total Staked Tokens</span>
-
+    
                 <!-- <h3 class="mb-15" >$7,868,163.54</h3> -->
                 <!-- <span>Total Value Locked</span> -->
               </div>
               <!--
-                        <div class="project-value-image">
-                            <img class="heading-right-image" src="assets/images/project/rank.png" alt="rank" />
-                        </div> -->
+                            <div class="project-value-image">
+                                <img class="heading-right-image" src="assets/images/project/rank.png" alt="rank" />
+                            </div> -->
             </div>
             <!--
-                    <div
-                        class="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
-                        <div class="project-value">
-                            <h3 class="mb-15">158.50 %</h3>
-                            <span>Apy</span>
-                        </div>
-                        <div class="project-value-image">
-                            <img class="heading-right-image" src="assets/images/project/rank2.png" alt="rank" />
-                        </div>
-                    </div> -->
-            <div
-              class="project-item project-value-inner d-flex justify-content-between align-items-center"
-            >
+                        <div
+                            class="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
+                            <div class="project-value">
+                                <h3 class="mb-15">158.50 %</h3>
+                                <span>Apy</span>
+                            </div>
+                            <div class="project-value-image">
+                                <img class="heading-right-image" src="assets/images/project/rank2.png" alt="rank" />
+                            </div>
+                        </div> -->
+            <div class="project-item project-value-inner d-flex justify-content-between align-items-center">
               <div class="project-value">
                 <h3 class="mb-15 initial-loader" id="num-of-stackers">0</h3>
                 <span>Number of Stakers</span>
               </div>
               <!--
-                        <div class="project-value-image">
-                            <img class="heading-right-image" src="assets/images/project/rank3.png" alt="rank" />
-                        </div> -->
+                            <div class="project-value-image">
+                                <img class="heading-right-image" src="assets/images/project/rank3.png" alt="rank" />
+                            </div> -->
             </div>
-            <div
-              class="project-item project-value-inner justify-content-between align-items-center wallet-connected-block"
-              style="display: none"
-            >
+            <div class="project-item project-value-inner justify-content-between align-items-center wallet-connected-block"
+              style="display: none">
               <div class="project-value">
-                <h3
-                  class="mb-15 refresh-loader"
-                  id="user-staked-balance"
-                  bal="0"
-                >
+                <h3 class="mb-15 refresh-loader" id="user-staked-balance" bal="0">
                   0
                 </h3>
                 <span>Your Staked Tokens</span>
               </div>
               <!--
-                        <div class="project-value-image">
-                            <img class="heading-right-image" src="assets/images/project/rank3.png" alt="rank" />
-                        </div> -->
+                            <div class="project-value-image">
+                                <img class="heading-right-image" src="assets/images/project/rank3.png" alt="rank" />
+                            </div> -->
             </div>
-            <div
-              class="project-item project-value-inner justify-content-between align-items-center countdown-block"
-              style="display: none"
-            >
+            <div class="project-item project-value-inner justify-content-between align-items-center countdown-block"
+              style="display: none">
               <div class="project-value">
-                <h3
-                  class="mb-15 refresh-loader initial-loader countdown-time"
-                ></h3>
+                <h3 class="mb-15 refresh-loader initial-loader countdown-time"></h3>
                 <span class="countdown-title"></span>
               </div>
               <!--
-                        <div class="project-value-image">
-                            <img class="heading-right-image" src="assets/images/project/rank3.png" alt="rank" />
-                        </div> -->
+                            <div class="project-value-image">
+                                <img class="heading-right-image" src="assets/images/project/rank3.png" alt="rank" />
+                            </div> -->
             </div>
           </div>
         </div>
