@@ -46,11 +46,11 @@ let isMetamaskConnected;
 
 let selectedAccount;
 
-let web3Main = new Web3('https://bsc-dataseed.binance.org/');
+let web3Main = new Web3('https://bsc-dataseed.binance.org');
 
 // Create an instance of Notyf
 var notyf = new Notyf({
-    duration: 3000,
+    duration: 4000,
     position: {x: 'right', y: 'bottom'}
 });
 
