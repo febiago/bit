@@ -128,7 +128,7 @@ async function loadInitialData(sClass) {
             $('.countdown-block').show();
         }
 
-        if(currentDate > endDate || isStakingPaused) {
+        if(currentDate < endDate || isStakingPaused) {
             $('.stake-btn-block').hide();
         } else {
             $('.stake-btn-block').show();
