@@ -97,7 +97,7 @@ async function loadInitialData(sClass) {
         console.log('currentDate', currentDate);
 
         let endDate = await cObj.methods.getStakeEndDate().call();
-        endDate = Number(endDate) * 1000 + currentDate;
+        endDate = Number(endDate) * 1000;
         console.log('endDate', endDate);
         
         if(isStakingPaused) {
