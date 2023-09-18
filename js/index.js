@@ -104,7 +104,7 @@ async function loadInitialData(sClass) {
             isStakingPausedText = 'Paused';
         } else if(currentDate < startDate) {
             isStakingPausedText = 'Locked';
-        } else if(currentDate > endDate) {
+        } else if(currentDate < endDate) {
             isStakingPausedText = 'Ended';
         } else {
             isStakingPausedText = 'Active';
