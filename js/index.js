@@ -93,7 +93,7 @@ async function loadInitialData(sClass) {
         startDate = Number(startDate) * 1000;        
         console.log('startDate', startDate);
 
-        let currentDate = new Date('2023-09-19T00:00:00Z').getTime();
+        let currentDate = new Date().getTime();
         console.log('currentDate', currentDate);
 
         let endDate = await cObj.methods.getStakeEndDate().call();
