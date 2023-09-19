@@ -104,7 +104,7 @@ async function loadInitialData(sClass) {
             isStakingPausedText = 'Paused';
         } else if(currentDate < startDate) {
             isStakingPausedText = 'Locked';
-        } else if(currentDate < endDate) {
+        } else if(currentDate > endDate) {
             isStakingPausedText = 'Ended';
         } else {
             isStakingPausedText = 'Active';
@@ -128,7 +128,7 @@ async function loadInitialData(sClass) {
             $('.countdown-block').show();
         }
 
-        if(currentDate < endDate || isStakingPaused) {
+        if(currentDate > endDate || isStakingPaused) {
             $('.stake-btn-block').hide();
         } else {
             $('.stake-btn-block').show();
