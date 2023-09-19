@@ -571,7 +571,7 @@ async function refreshBal(sClass) {
 
     console.log('rewardBal', rewardBal);
 
-    $('#user-reward-balance').html(`Reward: ${rewardBal / 10 ** 9} ${_CONTRACT_DATA[_NETWORK_ID].TOKEN.symbol}`);
+    $('#user-reward-balance').html(`Reward: ${rewardBal} ${_CONTRACT_DATA[_NETWORK_ID].TOKEN.symbol}`);
 }
 
 async function getTxhistory(sClass) {
